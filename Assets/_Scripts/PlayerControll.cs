@@ -34,7 +34,7 @@ public class PlayerControll : MonoBehaviour
 
         transform.rotation = Quaternion.Euler(0, 0, alpha*Mathf.Rad2Deg);
 
-        if (Input.GetButtonDown("Fire1")) 
+        if (Input.GetButtonDown("Fire1") && piggy.transform.parent) 
         {
             piggy.transform.parent = null;
             piggyBody.gravityScale = 1;
